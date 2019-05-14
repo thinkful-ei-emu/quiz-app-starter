@@ -10,7 +10,7 @@ Follow the instructions from the curriculum to build out the necessary classes f
 
 ### Superclass: Model
 
-By extending your class with `Model`, you declare all its instantiations to be bindable to one or more views (as created by extending `Renderer`). All models have the public method `update()`, which should be called to confirm any changes to your model's properties and initiate a new render cycle.
+By extending your class with `Model`, you declare all its instantiations to be bindable to one or more "views" (instances of `Renderer`). All models have the public method `update()`, which should be called to confirm any changes to your model's properties and initiate a new render cycle.
 
 ### Superclass: Renderer
 
