@@ -14,12 +14,12 @@ By extending your class with `Model`, you declare all its instantiations to be b
 
 ### Superclass: Renderer
 
-Classes that extend `Renderer` are singletons (should be instantiated only once). Renderers are instantiated with the following required parameters:
+Classes that extend `Renderer` define a template and reactive behavior for all instances. A renderer instance is constructed with the following required parameters:
 
 1. `model` - a model instance
 2. `el` - DOM selector string for a permanent DOM element
 
-Renderer instances have the following reserved public methods that provide special functionality:
+Renderer instances have the following reserved public method names that can be defined to provide special functionality:
 
 ##### template() - REQUIRED
 
