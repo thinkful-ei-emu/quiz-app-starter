@@ -68,6 +68,8 @@ class Quiz {
     // If correct, increase score
     if (currentQ.getAnswerStatus() === 1) {
       this.increaseScore();
+    } else {
+      this.update();
     }
 
     return true;
