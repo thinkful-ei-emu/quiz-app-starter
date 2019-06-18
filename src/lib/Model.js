@@ -17,7 +17,7 @@ class Model {
     if (!Model.viewMap) Model.viewMap = new WeakMap();
     // this === instance of Quiz
     Model.viewMap.set(this, []);
-    console.log(Model.viewMap);
+    // console.log(Model.viewMap);
   }
   /**
    * Used in Renderer class to push the views onto the WeakMap:
