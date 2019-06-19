@@ -64,15 +64,22 @@ class Quiz {
 
     // Otherwise, submit the answer
     currentQ.submitAnswer(answerText);
-
-    // If correct, increase score
-    if (currentQ.getAnswerStatus() === 1) {
-      this.increaseScore();
-    } else {
+    let answerStatus = currentQ.getAnswerStatus();
+    
+   // if user doesn't answer question
+    if (answerStatus === -1) {
+      return false;
+    }
+    // Otherwise, update
+    else {
+      // If correct, increase score
+      if (answerStatus === 1) {
+        this._increaseScore();
+      }
       this.update();
     }
-
-    return true;
+    // Returns boolean. true if question correct, false if incorrect
+    return answerStatus === 1;
   }
 }
 
