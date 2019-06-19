@@ -74,7 +74,7 @@ class Quiz {
     else {
       // If correct, increase score
       if (answerStatus === 1) {
-        this._increaseScore();
+        this.increaseScore();
       }
       this.update();
     }
